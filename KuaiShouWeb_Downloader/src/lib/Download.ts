@@ -2,7 +2,8 @@
 import type {DownloadList} from "./DomHandler"
 
 async function ShootAllDownload(downloadList : DownloadList) {
-  downloadList.forEach(item => {
+  let downloadSet = new Set(downloadList)
+  downloadSet.forEach(item => {
     if(item.name && item.src){
       setTimeout(() => {
         GM_download(item.src,item.name)
