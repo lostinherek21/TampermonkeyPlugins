@@ -1,0 +1,11 @@
+{
+  "type": "module",
+  "dependencies": {
+    "fs-extra": "^10.1.0",
+    "winreg": "^1.2.4"
+  },
+  "devDependencies": {
+    "@types/fs-extra": "^9.0.13",
+    "@types/winreg": "^1.2.31"
+  }
+}
